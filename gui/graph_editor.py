@@ -1,5 +1,5 @@
 """
-graph_editor.py — Modern Graph/Link editor for LAITOXX.
+graph_editor.py — Modern Graph/Link editor for FANLAND.
 Glassmorphism UI, gradient buttons, real-time opacity slider.
 """
 from __future__ import annotations

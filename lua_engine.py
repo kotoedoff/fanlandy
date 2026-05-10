@@ -1,5 +1,5 @@
 """
-Lua Plugin Engine for Laitoxx.
+Lua Plugin Engine for Fanland.
 
 Uses `lupa` (LuaJIT/Lua runtime for Python) to execute Lua plugins
 inside a sandboxed environment with a rich host API.

@@ -1,7 +1,7 @@
 """Central path definitions for all settings and resource files."""
 import os
 
-# Project root — two levels up from this file (settings/paths.py → settings/ → LAITOXX/)
+# Project root — two levels up from this file (settings/paths.py → settings/ → FANLAND/)
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 

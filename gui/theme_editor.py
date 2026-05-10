@@ -1,5 +1,5 @@
 """
-theme_editor.py — Modern Theme Editor for LAITOXX.
+theme_editor.py — Modern Theme Editor for FANLAND.
 
 Layout (3-panel monolithic window):
   Left: searchable element list grouped by category
@@ -179,7 +179,7 @@ PRESETS: dict[str, dict] = {
         "border_color":                 "rgba(60, 100, 200, 0.30)",
         "text_secondary_color":         "#5570aa",
     },
-    "Red Laitoxx": DEFAULT_THEME.copy(),
+    "Red Fanland": DEFAULT_THEME.copy(),
 }
 
 

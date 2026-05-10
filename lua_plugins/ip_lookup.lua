@@ -1,5 +1,5 @@
 -- ============================================================================
--- IP Lookup Plugin for Laitoxx
+-- IP Lookup Plugin for Fanland
 -- ============================================================================
 -- Example plugin that looks up IP address information using a free API.
 -- Demonstrates: HTTP requests, JSON parsing, output formatting, error handling.
@@ -9,7 +9,7 @@ local plugin = {
     id          = "ip_lookup",
     name        = "IP Lookup (Lua)",
     description = "Look up geolocation and network info for an IP address using ip-api.com (free, no key required).",
-    author      = "Laitoxx Community",
+    author      = "Fanland Community",
     version     = "1.0",
     type        = "search",
 

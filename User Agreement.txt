@@ -1,10 +1,10 @@
 Ru:
 
-Пользовательское соглашение для Laitoxx Multi-Tool
+Пользовательское соглашение для Fanland Multi-Tool
 
 Последнее обновление: [09.03.2025]
 
-Настоящее соглашение регулирует использование программного обеспечения Laitoxx Multi-Tool (далее – «Программа»). Устанавливая, используя или получая доступ к Программе, вы соглашаетесь с условиями данного соглашения.
+Настоящее соглашение регулирует использование программного обеспечения Fanland Multi-Tool (далее – «Программа»). Устанавливая, используя или получая доступ к Программе, вы соглашаетесь с условиями данного соглашения.
 1. Общие положения
 
 1.1. Программа предоставляется исключительно в образовательных и исследовательских целях.
@@ -32,15 +32,15 @@ Ru:
 5.2. Если вы не согласны с условиями, немедленно прекратите использование Программы и удалите её с вашего устройства.
 5.3. Любые претензии или споры, связанные с использованием Программы, не подлежат рассмотрению разработчиками.
 
-⚠ Важно: Использование Laitoxx Multi-Tool – это ваш личный выбор и ответственность. Разработчики не поощряют и не поддерживают незаконные действия.
+⚠ Важно: Использование Fanland Multi-Tool – это ваш личный выбор и ответственность. Разработчики не поощряют и не поддерживают незаконные действия.
 
 En:
 
-Laitoxx Multi-Tool – User Agreement
+Fanland Multi-Tool – User Agreement
 
 Last Updated: [09.03.2025]
 
-This agreement governs the use of Laitoxx Multi-Tool (hereinafter referred to as the "Software"). By installing, using, or accessing the Software, you agree to the terms of this agreement.
+This agreement governs the use of Fanland Multi-Tool (hereinafter referred to as the "Software"). By installing, using, or accessing the Software, you agree to the terms of this agreement.
 1. General Provisions
 
 1.1. The Software is provided for educational and research purposes only.
@@ -68,4 +68,4 @@ This agreement governs the use of Laitoxx Multi-Tool (hereinafter referred to as
 5.2. If you do not agree with these terms, immediately stop using the Software and remove it from your device.
 5.3. Any claims or disputes related to the Software will not be considered by the developers.
 
-⚠ Important: The use of Laitoxx Multi-Tool is your personal choice and responsibility. The developers do not encourage or support illegal activities.
+⚠ Important: The use of Fanland Multi-Tool is your personal choice and responsibility. The developers do not encourage or support illegal activities.

@@ -1,8 +1,8 @@
 -- ============================================================================
--- Laitoxx Lua Plugin Template
+-- Fanland Lua Plugin Template
 -- ============================================================================
 --
--- This is a template for creating Lua plugins for Laitoxx.
+-- This is a template for creating Lua plugins for Fanland.
 -- Copy this file, rename it, and modify to create your own plugin.
 --
 -- STRUCTURE:
@@ -40,7 +40,7 @@
 --     host:url_encode(text)          -- URL-encode
 --     host:url_decode(text)          -- URL-decode
 --     host:sleep(seconds)            -- Sleep (max 60s)
---     host:get_tool_version()        -- Get Laitoxx version
+--     host:get_tool_version()        -- Get Fanland version
 --     host:get_platform()            -- Get OS name
 --
 --   Cache (in-memory, per session):

@@ -6,7 +6,7 @@
 
 ### Getting Started
 
-Laitoxx plugins are written in **Lua** and run inside a secure sandbox. Each plugin is a single `.lua` file placed in the `lua_plugins/` directory. The application discovers plugins automatically on startup.
+Fanland plugins are written in **Lua** and run inside a secure sandbox. Each plugin is a single `.lua` file placed in the `lua_plugins/` directory. The application discovers plugins automatically on startup.
 
 **Quick start:**
 1. Open the **Plugin Builder** from the sidebar
@@ -157,7 +157,7 @@ end
 | `host:url_encode(text)` | URL-encode (percent encoding) |
 | `host:url_decode(text)` | URL-decode |
 | `host:sleep(seconds)` | Pause execution (max 60 seconds) |
-| `host:get_tool_version()` | Returns Laitoxx version string |
+| `host:get_tool_version()` | Returns Fanland version string |
 | `host:get_platform()` | Returns `"Windows"`, `"Linux"`, or `"Darwin"` |
 
 #### Cache (In-Memory, Per Session)
@@ -422,7 +422,7 @@ return plugin
 
 ### Начало работы
 
-Плагины Laitoxx пишутся на **Lua** и выполняются внутри безопасной песочницы. Каждый плагин — это один файл `.lua` в папке `lua_plugins/`. Приложение автоматически находит плагины при запуске.
+Плагины Fanland пишутся на **Lua** и выполняются внутри безопасной песочницы. Каждый плагин — это один файл `.lua` в папке `lua_plugins/`. Приложение автоматически находит плагины при запуске.
 
 **Быстрый старт:**
 1. Откройте **Конструктор плагинов** в боковой панели
@@ -572,7 +572,7 @@ end
 | `host:url_encode(text)` | URL-кодирование (percent encoding) |
 | `host:url_decode(text)` | URL-декодирование |
 | `host:sleep(seconds)` | Пауза выполнения (максимум 60 секунд) |
-| `host:get_tool_version()` | Возвращает версию Laitoxx |
+| `host:get_tool_version()` | Возвращает версию Fanland |
 | `host:get_platform()` | Возвращает `"Windows"`, `"Linux"` или `"Darwin"` |
 
 #### Кэш (в памяти, на время сессии)

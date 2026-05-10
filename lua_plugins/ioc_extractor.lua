@@ -1,5 +1,5 @@
 -- ============================================================================
--- IOC Extractor Plugin for Laitoxx
+-- IOC Extractor Plugin for Fanland
 -- ============================================================================
 -- Extracts Indicators of Compromise (IOCs) from text input:
 -- IP addresses, email addresses, URLs, MD5/SHA hashes, domains.
@@ -10,7 +10,7 @@ local plugin = {
     id          = "ioc_extractor",
     name        = "IOC Extractor (Lua)",
     description = "Extract indicators of compromise (IPs, emails, URLs, hashes, domains) from text.",
-    author      = "Laitoxx Community",
+    author      = "Fanland Community",
     version     = "1.0",
     type        = "processor",
 

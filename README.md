@@ -1,170 +1,76 @@
-# Laitoxx Multi-Tool V2.3
+# Fanland OSINT Multi-Tool
 
-<img src="./Screenshot 2026-04-12 111243.png" alt="Laitoxx banner" width="100%"/>
+## Overview
 
----
+Fanland is a powerful OSINT (Open-Source Intelligence) investigation platform with AI assistant, session management, and 11+ integrated tools for digital investigations.
 
-### 📌 English
+## Key Features
 
-Laitoxx is a powerful OSINT (Open-Source Intelligence) and cybersecurity toolkit, now completely rebuilt with a modern, user-friendly Graphical User Interface (GUI). It is designed for educational and research purposes, helping users collect publicly available data for security analysis, penetration testing, and digital footprint assessment.
+### 🔍 OSINT Tools Integration
+- **Maigret** - 3000+ sites username search
+- **Sherlock** - 400+ social networks  
+- **Holehe** - Email verification on 120+ sites
+- **GHunt** - Google account OSINT
+- **Blackbird** - 600+ sites search
+- **PhoneInfoga** - Phone number intelligence
+- **Toutatis** - Instagram OSINT
+- **SpiderFoot** - Automated OSINT
+- **theHarvester** - Email/subdomain gathering
+- **WhatsMyName** - Username enumeration
+- **SocialScan** - Social media checker
 
-⚠ **Disclaimer**: This tool is created for educational purposes only. The developers are not responsible for any misuse of this software.
+### 🤖 AI Assistant
+- Powered by Groq (Llama 3.3 70B)
+- Context-aware investigation helper
+- Analyzes findings and suggests next steps
+- Integrated with session data
 
-### ✨ What's New (v2.3)
+### 📊 Session Management
+- Track multiple investigations
+- Store findings and connections
+- Chat history with AI
+- SQLite database backend
 
-* **Graph Editor (Relationship Visualization)**: Added a new visual interface for analyzing connections and relationships between data.
-* **Lua Plugin System**: The plugin system has been significantly improved — plugins are now written in Lua, making development easier and more flexible.
-* **Reworked Web Tools**: All tools for working with websites have been fully redesigned and improved.
-* **CIDR Range Calculator**: Added a built-in calculator for working with CIDR ranges.
-* **REGEX Tester**: Quickly test and validate regular expressions.
-* **Settings Menu**: New centralized settings panel for better control over the application.
-* **Performance Mode**: Special mode for improved performance on low-end devices.
-* **SOCKS5 Proxy Support**: Ability to connect a SOCKS5 proxy to hide your IP during operations.
-* **Improved Theme Editor**: Enhanced customization of UI color themes.
-* **Updated Nickname Search**: Improved accuracy and coverage of username searches.
-* **Image-Based Search**: New tool for searching information using images.
+### 🎨 Modern Interface
+- Customizable themes
+- Background support (GIF/Video)
+- Multi-language (EN/RU)
+- Plugin system (Lua)
 
-📌 **Note**: Documentation for working with the Lua API is available locally in the file  
-👉 [Plugin Development Guide](./pluginBuilding.md)
+## Installation
 
-### 🔌 Plugin Development (Lua)
+```bash
+git clone https://github.com/kotoedoff/fanlandy.git
+cd fanlandy
+pip install -r requirements.txt
+python3 gui.py
+```
 
-Laitoxx supports extensibility through a powerful Lua-based plugin system.
+## Requirements
+- Python 3.11+
+- PyQt6
+- Groq API key (for AI assistant)
+- See requirements.txt for full list
 
-To create your own plugin:
+## Usage
 
-1. Learn the plugin structure and API
-2. Write your plugin in Lua
-3. Place it in the plugins directory
-4. Restart the application
+1. Launch: `python3 gui.py`
+2. Create or select investigation session
+3. Use OSINT tools from categories
+4. Chat with AI assistant for analysis
+5. Save findings to session
 
-📘 Full guide:  
-👉 [pluginBuilding.md](./pluginBuilding.md)
+## Configuration
 
-### 🔹 Features
+- **Groq API Key**: Enter when first using AI assistant (saved in settings)
+- **Themes**: Settings → Load/Create Theme
+- **Proxy**: Settings → Network → Proxy Configuration
 
-* **Modern GUI**
-* **Extensible via Plugins (Lua)**
-* **Customizable Themes**
+## License
 
-#### OSINT Tools:
-* Phone number lookup  
-* IP tracking & scanning  
-* Email OSINT & validation  
-* Telegram OSINT  
-* Username search  
+Educational and research purposes only. See User Agreement.txt
 
-#### Web & Network Tools:
-* Port scanner (Nmap-based)  
-* Subdomain finder  
-* CMS Detector
-* Technologies Fingerprinting
-* Web security tools(http inspecting, jwt token analyzer and etc..)
+## Credits
 
-#### Utilities:
-* Local database search  
-* Hash Tools  
-* And much more...
-
-### 🚀 Installation & Usage
-
-1.  **Clone the repository:**
-    ```sh
-    git clone https://github.com/Laitoxx/Laitoxx-Multi-Tool.git
-    ```
-2.  **Navigate to the project directory:**
-    ```sh
-    cd Laitoxx-Multi-Tool
-    ```
-3.  **Install dependencies:**
-    ```sh
-    pip install -r requirements.txt
-    ```
-4.  **Run the application:**
-    ```sh
-    python gui.py
-    ```
-
-
----
-
-### 📌 Русский
-
-Laitoxx — это мощный инструмент для OSINT (разведки по открытым источникам) и кибербезопасности с современным графическим интерфейсом (GUI). Предназначен для образовательных и исследовательских целей.
-
-⚠ **Дисклеймер**: Инструмент создан исключительно в образовательных целях. Разработчики не несут ответственности за его использование.
-
-### ✨ Что нового (v2.3)
-
-* **Редактор графов**: Визуализация связей и зависимостей между данными.
-* **Плагин-система на Lua**: Полностью обновлённая система плагинов — теперь плагины пишутся на Lua.
-* **Переработка веб-инструментов**: Улучшена работа со всеми инструментами для сайтов.
-* **Калькулятор CIDR**: Добавлен инструмент для работы с сетевыми диапазонами.
-* **REGEX Tester**: Проверка и тестирование регулярных выражений.
-* **Меню настроек**: Новый удобный центр управления.
-* **Режим производительности**: Оптимизация для слабых устройств.
-* **Поддержка SOCKS5**: Возможность скрытия IP через прокси.
-* **Улучшенный редактор тем**
-* **Обновлён поиск по никнейму**
-* **Поиск по изображению**
-
-📌 **Примечание**: Документация по Lua API доступна локально:  
-👉 [Руководство по плагинам](./pluginBuilding.md)
-
-### 🔌 Разработка плагинов (Lua)
-
-Laitoxx поддерживает расширение функционала через систему плагинов на Lua.
-
-Чтобы создать свой плагин:
-
-1. Изучите структуру и API
-2. Напишите плагин на Lua
-3. Поместите его в папку plugins
-4. Перезапустите приложение
-
-📘 Полная документация:  
-👉 [pluginBuilding.md](./pluginBuilding.md)
-
-### 🔹 Функционал
-
-* Современный GUI  
-* Расширяемость через Lua-плагины  
-* Настраиваемые темы  
-
-#### OSINT:
-* Поиск по номеру  
-* IP анализ  
-* Email OSINT  
-* Telegram OSINT  
-* Поиск по нику  
-
-#### Веб и сеть: 
-* Сканер портов (Nmap)  
-* Поиск субдоменов  
-* CMS детектор
-* Определитель Технологий
-* Инструменты веб безопасности
-
-#### Утилиты:
-* Поиск по БД  
-* Инструменты работы с хешами
-* И другое  
-
-### 🚀 Установка
-
-1.  **Клонируйте репозиторий:**
-    ```sh
-    git clone https://github.com/Laitoxx/Laitoxx-Multi-Tool.git
-    ```
-2.  **Перейдите в папку проекта:**
-    ```sh
-    cd Laitoxx-Multi-Tool
-    ```
-3.  **Установите зависимости:**
-    ```sh
-    pip install -r requirements.txt
-    ```
-4.  **Запустите приложение:**
-    ```sh
-    python gui.py
-    ```
+Original Laitoxx Multi-Tool by Asoru (@perehodasoru)  
+Enhanced with AI and session management by kotoedoff

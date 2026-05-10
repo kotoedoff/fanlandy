@@ -72,7 +72,7 @@ intro = """
           ⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⣿⣿⣿⣿⣿⣦⣄⣀⠀⠀⢻⣿⣿⣿⣧⣿⣿⣿⣿⡟⠀⠀⠀⠀⢀⣤⣶⣿⣿⣿⣿⣿⡿⠉⠀⠀⠀⠀⠀⠀⠀⠀
           ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⣷⣶⣼⣿⣿⣿⣿⣿⣿⣿⣿⣁⣤⣤⣶⣾⣿⣿⣿⣿⣿⡿⠿⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-             Laitoxx deanon tool! By: Asoru Telegram: @perehodasoru
+             Fanland deanon tool! By: Asoru Telegram: @perehodasoru
                                Press to Enter
 """
 

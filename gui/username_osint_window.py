@@ -1,5 +1,5 @@
 """
-username_osint_window.py — Modern Username OSINT dialog for LAITOXX.
+username_osint_window.py — Modern Username OSINT dialog for FANLAND.
 
 Layout:
   ┌──────────────────────────────────────────┐

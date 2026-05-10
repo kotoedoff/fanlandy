@@ -1,5 +1,5 @@
 """
-username_osint — Advanced username OSINT package for LAITOXX.
+username_osint — Advanced username OSINT package for FANLAND.
 
 Entry point for TOOL_REGISTRY integration and CLI usage.
 """

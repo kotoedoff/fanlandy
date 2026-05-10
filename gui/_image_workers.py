@@ -90,7 +90,7 @@ class SearchWorker(QObject):
                         "https://reverseimg.net/api/upload",
                         json={"imageBase64": b64},
                         headers={
-                            "User-Agent": "Mozilla/5.0 LAITOXX/2.2",
+                            "User-Agent": "Mozilla/5.0 FANLAND/2.2",
                             "Content-Type": "application/json",
                         },
                         timeout=15,

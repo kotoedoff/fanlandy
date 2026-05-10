@@ -633,14 +633,14 @@ class ThemeEditorDialog(QDialog):
 class UserAgreementDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("Laitoxx Project - User Agreement")
+        self.setWindowTitle("Fanland Project - User Agreement")
         self.setMinimumSize(700, 600)
         self.setModal(True)
         self.agreed = False
 
         layout = QVBoxLayout(self)
 
-        title = QLabel("User Agreement for Laitoxx Project")
+        title = QLabel("User Agreement for Fanland Project")
         title.setStyleSheet("font-size: 16px; font-weight: bold; margin-bottom: 10px;")
         layout.addWidget(title)
 
