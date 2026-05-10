@@ -36,7 +36,7 @@ i18n = I18n(get_current_language())
 
 TRANSLATIONS = {
     "ru": {
-        "app_title": "Laitoxx",
+        "app_title": "Fanland OSINT",
         "search": "Поиск",
         "add_step": "Добавить шаг",
         "remove_step": "Удалить шаг",
@@ -287,7 +287,7 @@ TRANSLATIONS = {
         "search": "Поиск..."
     },
     "en": {
-        "app_title": "Laitoxx",
+        "app_title": "Fanland OSINT",
         "search": "Search...",
         "add_step": "Add Step",
         "remove_step": "Remove Step",

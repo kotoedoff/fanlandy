@@ -33,6 +33,13 @@ from script.tools.cidr_calculator import cidr_calculator_tool
 from script.tools.image_search import image_search_tool
 
 
+def osint_search_tool():
+    from gui.osint_search_window import OSINTSearchWindow
+    window = OSINTSearchWindow()
+    window.show()
+    return window
+
+
 @dataclass(frozen=True)
 class ToolSpec:
     func: Callable
@@ -48,7 +55,7 @@ TOOL_REGISTRY: Dict[str, ToolSpec] = {
         func=search_by_number,
         input_type="text",
         prompt="Enter phone number (+ or without):",
-        desc="Get information about a phone number.",
+        desc="PhoneInfoga: carrier, location, social media profiles",
         threaded=True,
     ),
     "Check IP": ToolSpec(
@@ -62,14 +69,14 @@ TOOL_REGISTRY: Dict[str, ToolSpec] = {
         func=check_email_address,
         input_type="text",
         prompt="Enter email address:",
-        desc="Validate email format (syntax only).",
+        desc="Holehe + GHunt: check email on 120+ sites, Google account info",
         threaded=True,
     ),
     "Info Website": ToolSpec(
         func=get_website_info,
         input_type="text",
         prompt="Enter website URL:",
-        desc="Gather information about a website (Whois, etc.).",
+        desc="theHarvester + SpiderFoot: emails, subdomains, tech stack, OSINT automation",
         threaded=True,
     ),
     "Gmail Osint": ToolSpec(
@@ -111,7 +118,7 @@ TOOL_REGISTRY: Dict[str, ToolSpec] = {
         func=username_osint_tool,
         input_type="username_osint_dialog",
         prompt=None,
-        desc="Advanced Username OSINT: 500+ sites, nickname generation, graph integration.",
+        desc="Maigret (3000+) • Sherlock (400+) • Blackbird (600+) • WhatsMyName • SocialScan",
         threaded=False,
     ),
     "Web-crawler": ToolSpec(
@@ -230,7 +237,14 @@ TOOL_REGISTRY: Dict[str, ToolSpec] = {
         func=image_search_tool,
         input_type="image_search",
         prompt=None,
-        desc="Обратный поиск изображений + криминалистический анализ: ELA, EXIF, хэши, редактор.",
+        desc="Reverse image search + forensics: ELA, EXIF, hashes, editor",
+        threaded=False,
+    ),
+    "OSINT Tools": ToolSpec(
+        func=osint_search_tool,
+        input_type=None,
+        prompt=None,
+        desc="🔥 Maigret (3000+) • Sherlock (400+) • Holehe • GHunt • Blackbird • PhoneInfoga • Toutatis",
         threaded=False,
     ),
 }

@@ -178,6 +178,15 @@ class AppSettings:
     def proxy(self, value: dict):
         self._data["proxy"] = value
         self.save()
+        
+    @property
+    def groq_api_key(self) -> str:
+        return self._data.get("groq_api_key", "")
+
+    @groq_api_key.setter
+    def groq_api_key(self, value: str):
+        self._data["groq_api_key"] = value
+        self.save()
 
     # ── Migration ──────────────────────────────────────────────────────────────
 

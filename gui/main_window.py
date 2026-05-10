@@ -40,6 +40,9 @@ from gui.graph_editor import GraphEditorWindow
 from gui.username_osint_window import UsernameOsintWindow
 from gui.image_search_window import ImageSearchWindow
 from gui.tool_registry import TOOL_REGISTRY, CATEGORIES
+from gui.session_manager_window import SessionManagerWindow
+from gui.ai_assistant_window import AIAssistantWindow
+from database.sessions import get_session
 
 try:
     from lua_engine import (
@@ -70,12 +73,24 @@ class MainWindow(QMainWindow):
         self._graph_editor_window = None
         self._username_osint_window = None
         self._image_search_window = None
+        self._linkscope_window = None
+        self.current_session_id = None
 
         ensure_resource_dirs()
         apply_proxy_settings(settings.proxy)
         translator.set_language(settings.language)
 
         self.load_initial_theme()
+        self._show_session_manager()
+        
+    def _show_session_manager(self):
+        dialog = SessionManagerWindow(self, self._on_session_selected)
+        dialog.exec()
+        
+    def _on_session_selected(self, session_id):
+        self.current_session_id = session_id
+        session = get_session(session_id)
+        logging.info(f"Session selected: {session[1]} (ID: {session_id})")
         self._build_ui()
         self.load_lua_plugins()
         self.retranslate_ui()
@@ -132,12 +147,14 @@ class MainWindow(QMainWindow):
         self.btn_create_theme = GlassButton("")
         self.btn_plugin_builder = GlassButton("")
         self.btn_graph_editor = GlassButton("")
+        self.btn_ai_assistant = GlassButton("AI")
         self.btn_lang_switch = GlassButton("RU/EN")
         self.btn_hide_ui = GlassButton("")
         self.btn_exit = GlassButton("")
 
         for btn in (self.btn_settings, self.btn_load_theme, self.btn_create_theme,
-                    self.btn_plugin_builder, self.btn_graph_editor, self.btn_lang_switch, self.btn_hide_ui):
+                    self.btn_plugin_builder, self.btn_graph_editor,
+                    self.btn_ai_assistant, self.btn_lang_switch, self.btn_hide_ui):
             layout.addWidget(btn)
         layout.addSpacerItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         layout.addWidget(self.btn_exit)
@@ -147,6 +164,7 @@ class MainWindow(QMainWindow):
         self.btn_create_theme.clicked.connect(self._create_new_theme)
         self.btn_plugin_builder.clicked.connect(self._open_plugin_builder)
         self.btn_graph_editor.clicked.connect(self._open_graph_editor)
+        self.btn_ai_assistant.clicked.connect(self._open_ai_assistant)
         self.btn_lang_switch.clicked.connect(self._switch_language)
         self.btn_hide_ui.clicked.connect(self._toggle_ui_visibility)
         self.btn_exit.clicked.connect(self.close)
@@ -490,7 +508,21 @@ class MainWindow(QMainWindow):
         editor.finished.connect(lambda: setattr(self, '_graph_editor_window', None))
         self._graph_editor_window = editor
         editor.show()
-
+        
+    def _open_ai_assistant(self):
+        if not self.current_session_id:
+            QMessageBox.warning(self, "Error", "No active session")
+            return
+        api_key = settings.groq_api_key
+        if not api_key:
+            from PyQt6.QtWidgets import QInputDialog
+            api_key, ok = QInputDialog.getText(self, "Groq API Key", "Enter your Groq API key:")
+            if not ok or not api_key:
+                return
+            settings.groq_api_key = api_key
+        dialog = AIAssistantWindow(self, self.current_session_id, api_key)
+        dialog.exec()
+        
     # ------------------------------------------------------------------
     # Pop-out terminal
     # ------------------------------------------------------------------

@@ -228,7 +228,7 @@ _FORENSICS_CHECK_FALLBACKS: dict[str, str] = {
 class ImageSearchWindow(QDialog):
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(parent)
-        self.setWindowTitle(_t("is_title", "LAITOXX — Image Analysis"))
+        self.setWindowTitle(_t("is_title", "Fanland — Image Analysis"))
         self.setMinimumSize(520, 420)
         self.resize(980, 680)
 
